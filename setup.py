@@ -23,8 +23,8 @@ def read(*rnames):
 
 setup(
     name='djangosaml2',
-    version='0.11.0.1-bw',
-    description='pysaml2 integration in Django',
+    version='0.11.3',
+    description='pysaml2 for python3 integration in Django',
     long_description='\n\n'.join([read('README'), read('CHANGES')]),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -46,6 +46,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'pysaml2==0.4.3.1-bw'
+        'pysaml3==2.0.0beta',
         ],
     )

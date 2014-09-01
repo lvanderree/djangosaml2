@@ -81,7 +81,7 @@ class Saml2Backend(ModelBackend):
                          % main_attribute)
             try:
                 with transaction.atomic():
-                    user, created = User.objects.get_or_create(
+                    user, created = User._default_manager.get_or_create(
                         **user_query_args)
             except MultipleObjectsReturned:
                 logger.error("There are more than one user with %s = %s" %

@@ -29,10 +29,10 @@ def get_config_loader(path, request=None):
     module, attr = path[:i], path[i + 1:]
     try:
         mod = import_module(module)
-    except ImportError, e:
+    except ImportError as e:
         raise ImproperlyConfigured(
             'Error importing SAML config loader %s: "%s"' % (path, e))
-    except ValueError, e:
+    except ValueError as e:
         raise ImproperlyConfigured(
             'Error importing SAML config loader. Is SAML_CONFIG_LOADER '
             'a correctly string with a callable path?'
