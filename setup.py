@@ -46,6 +46,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'pysaml3==2.0.0beta',
+        # 'pysaml3==2.0.0beta',
         ],
     )
