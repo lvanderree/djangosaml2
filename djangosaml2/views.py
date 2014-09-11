@@ -49,7 +49,7 @@ logger = logging.getLogger('djangosaml2')
 
 
 def _set_subject_id(session, subject_id):
-    session['_saml2_subject_id'] = code(subject_id)
+    session['_saml2_subject_id'] = subject_id
 
 
 def _get_subject_id(session):
